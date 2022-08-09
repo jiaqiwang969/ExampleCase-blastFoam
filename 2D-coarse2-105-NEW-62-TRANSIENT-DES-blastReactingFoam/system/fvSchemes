@@ -1,0 +1,83 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+fluxScheme   Kurganov;
+/*
+AUSM+
+AUSM+up
+HLL
+HLLC
+HLLCP
+Kurganov
+Tadmor
+*/
+ddtSchemes
+{
+    default         Euler;
+    timeIntegrator  RK4;
+}
+
+gradSchemes
+{
+    default         Gauss linear;
+
+//    default          cellLimited faceLeastSquares linear 0.6;
+//    grad(nuTilda)    cellLimited Gauss linear 0.9;
+//    grad(k)          cellLimited Gauss linear 0.9;
+//    grad(omega)      cellLimited Gauss linear 0.9;
+}
+
+divSchemes
+{
+    default         none;
+    div(tauMC)       Gauss linear;
+    div(rhoPhi,nuTilda) bounded Gauss upwind phi;
+    div(rhoPhi,k)       bounded Gauss upwind phi;
+    div(rhoPhi,omega)   bounded Gauss upwind phi;
+    div(rhoPhi,Ret)    bounded Gauss linear;
+    div(rhoPhi,im) bounded Gauss linear;
+    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
+}
+
+laplacianSchemes
+{
+    default         Gauss linear corrected;
+
+
+}
+
+interpolationSchemes
+{
+
+    default             linear;
+    reconstruct(rho)    quadraticMUSCL Minmod;
+    reconstruct(U)      quadraticMUSCL Minmod;
+    reconstruct(e)      quadraticMUSCL Minmod;
+    reconstruct(p)      quadraticMUSCL Minmod;
+    reconstruct(speedOfSound)      quadraticMUSCL Minmod;
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+
+wallDist
+{
+    method meshWave;
+}
+// ************************************************************************* //

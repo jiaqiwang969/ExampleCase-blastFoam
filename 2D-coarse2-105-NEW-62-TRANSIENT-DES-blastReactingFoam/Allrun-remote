@@ -1,0 +1,33 @@
+#!/bin/bash
+#SBATCH --job-name=wale-meduim-ref
+#SBATCH --partition=64c512g
+#SBATCH -n 64
+#SBATCH --ntasks-per-node=64
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
+#SBATCH --mail-type=all
+#SBATCH --mail-user=jiaqi_wang@sjtu.edu.cn
+
+
+#------------------------------------------------------------------------------
+#1. Defining the container to be used
+theRepo=/dssg/home/acct-medgm/medgm/00-sif
+theContainerBaseName=openfoam
+theVersion=9
+theProvider=github
+theImage=$theRepo/$theContainerBaseName-$theVersion-$theProvider.sif
+projectUserDir=/dssg/home/acct-medgm/medgm/projectUserDir-9
+#------------------------------------------------------------------------------
+
+theSolver="blastReactingFoam"
+
+#        runApplication decomposePar
+singularity exec -B $projectUserDir:/home/ofuser/OpenFOAM/ofuser-$theVersion $theImage decomposePar -latestTime
+
+#        runParallel -s parallel renumberMesh -overwrite
+#singularity exec -B $projectUserDir:/home/ofuser/OpenFOAM/ofuser-$theVersion $theImage renumberMesh -overwrite 
+
+srun --mpi=pmi2 singularity exec -B $projectUserDir:/home/ofuser/OpenFOAM/ofuser-$theVersion $theImage $theSolver  -parallel  
+
+
+#------------------------------------------------------------------------------
