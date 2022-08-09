@@ -1,0 +1,193 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/OpenFOAM/OpenFOAM-v2012/platforms/linux64GccDPInt32Opt/bin/decomposePar
+Date   : Jul 22 2022
+Time   : 21:26:18
+Host   : node736.pi.sjtu.edu.cn
+PID    : 1477832
+I/O    : collated (maxThreadFileBufferSize 0)
+         Threading not activated since maxThreadFileBufferSize = 0.
+         Writing may run slowly for large file sizes.
+Case   : /dssg/home/acct-medgm/medgm/A-DLR_Buffet/01-STEADY-2D-hisa-wallFunc-medium-gamma-NEWSTART/STEADY-coarse2-105-NEW-62-TRANSIENT-DES-rhoCentralFoamRK4
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/OpenFOAM/OpenFOAM-v2012/platforms/linux64GccDPInt32Opt/bin/rhoCentralFoam -parallel
+Date   : Jul 22 2022
+Time   : 21:26:25
+Host   : node736.pi.sjtu.edu.cn
+PID    : 1480363
+I/O    : collated (maxThreadFileBufferSize 0)
+         Threading not activated since maxThreadFileBufferSize = 0.
+         Writing may run slowly for large file sizes.
+Case   : /dssg/home/acct-medgm/medgm/A-DLR_Buffet/01-STEADY-2D-hisa-wallFunc-medium-gamma-NEWSTART/STEADY-coarse2-105-NEW-62-TRANSIENT-DES-rhoCentralFoamRK4
+nProcs : 64
+Hosts  :
+(
+    (node736.pi.sjtu.edu.cn 64)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.0001
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type LES
+Selecting LES turbulence model sstTransitionDES
+Selecting LES delta type vanDriest
+Selecting LES delta type cubeRootVol
+--> FOAM Warning : 
+    From void Foam::LESModels::cubeRootVolDelta::calcDelta()
+    in file LES/LESdeltas/cubeRootVolDelta/cubeRootVolDelta.C at line 58
+    Case is 2D, LES is not strictly applicable
+
+Selecting patchDistMethod meshWave
+LES
+{
+    LESModel        sstTransitionDES;
+    turbulence      on;
+    printCoeffs     on;
+    delta           vanDriest;
+    vanDriestCoeffs
+    {
+        delta           cubeRootVol;
+        cubeRootVolCoeffs
+        {
+            deltaCoeff      2;
+        }
+    }
+    Ce              1.048;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    freeStreamU     5.4;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+    kappa           0.41;
+    CDESkom         0.82;
+    CDESkeps        0.6;
+}
+
+fluxScheme: Kurganov
+
+Starting time loop
+
+fieldAverage fieldAverage:
+    Restarting averaging for fields:
+        U: iters = 10000 time = 0.0001
+        p: iters = 10000 time = 0.0001
+
+pressure pressure:
+    Operating mode: staticCoeff
+    Not including hydrostatic effects
+
+forceCoeffs forceCoeffs:
+    rho: rhoInf
+    Freestream density (rhoInf) set to 0.586
+    Not including porosity effects
+
+wallShearStress wallShearStress:
+    processing wall patches: 
+        Blade
+
+Mean and max Courant Numbers = 0.0119934 0.310952
+Time = 0.00010001
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.65011e-07, Final residual = 5.49211e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 3.18293e-07, Final residual = 2.23695e-10, No Iterations 1
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for e, Initial residual = 3.69706e-07, Final residual = 2.62014e-10, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 2.44094e-07, Final residual = 2.81686e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 1.32183e-06, Final residual = 2.43195e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 6.49175e-06, Final residual = 1.09785e-09, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 2.09645e-05, Final residual = 3.57466e-09, No Iterations 1
+ExecutionTime = 5.91 s  ClockTime = 9 s
+
+fieldAverage fieldAverage:
+    Reading/initialising field UMean
+    Reading/initialising field pMean
+
+fieldAverage fieldAverage write:
+    Calculating averages
+
+forceCoeffs forceCoeffs execute:
+    Coefficients
+        Cd       : -36.5307	(pressure: -36.6744	viscous: 0.143724)
+        Cs       : 1.19543e-16	(pressure: -5.00095e-18	viscous: 1.24544e-16)
+        Cl       : 26.4177	(pressure: 26.2301	viscous: 0.187586)
+        CmRoll       : 1.13219	(pressure: 1.12415	viscous: 0.00803939)
+        CmPitch       : 269.09	(pressure: 267.078	viscous: 2.01254)
+        CmYaw       : 1.5656	(pressure: 1.57176	viscous: -0.00615958)
+        Cd(f)    : -17.1331
+        Cd(r)    : -19.3975
+        Cs(f)    : 1.5656
+        Cs(r)    : -1.5656
+        Cl(f)    : 282.299
+        Cl(r)    : -255.881
+Mean and max Courant Numbers = 0.0119934 0.31095
+Time = 0.00010002
+

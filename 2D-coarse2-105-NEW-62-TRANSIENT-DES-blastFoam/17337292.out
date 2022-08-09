@@ -1,0 +1,340 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-2dfbc15bc6f1
+Exec   : /opt/OpenFOAM/OpenFOAM-9/platforms/linux64GccDPInt32Opt/bin/decomposePar -latestTime
+Date   : Jul 23 2022
+Time   : 12:37:55
+Host   : "node068.pi.sjtu.edu.cn"
+PID    : 1015681
+I/O    : collated (maxThreadFileBufferSize 2e+09)
+         Threading activated since maxThreadFileBufferSize > 0.
+         Requires large enough buffer to collect all data or thread support 
+         enabled in MPI. If thread support cannot be enabled, deactivate
+         threading by setting maxThreadFileBufferSize to 0 in
+         $FOAM_ETC/controlDict
+Case   : /dssg/home/acct-medgm/medgm/A-DLR_Buffet/01-STEADY-2D-hisa-wallFunc-medium-gamma-NEWSTART/STEADY-coarse2-105-NEW-62-TRANSIENT-DES-blastFoam
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-2dfbc15bc6f1
+Exec   : /home/ofuser/OpenFOAM/ofuser-9/platforms/linux64GccDPInt32Opt/bin/blastFoam -parallel
+Date   : Jul 23 2022
+Time   : 12:38:04
+Host   : "node068.pi.sjtu.edu.cn"
+PID    : 1017801
+I/O    : collated (maxThreadFileBufferSize 2e+09)
+         Threading activated since maxThreadFileBufferSize > 0.
+         Requires large enough buffer to collect all data or thread support 
+         enabled in MPI. If thread support cannot be enabled, deactivate
+         threading by setting maxThreadFileBufferSize to 0 in
+         $FOAM_ETC/controlDict
+Case   : /dssg/home/acct-medgm/medgm/A-DLR_Buffet/01-STEADY-2D-hisa-wallFunc-medium-gamma-NEWSTART/STEADY-coarse2-105-NEW-62-TRANSIENT-DES-blastFoam
+nProcs : 64
+Slaves : 
+63
+(
+"node068.pi.sjtu.edu.cn.1017620"
+"node068.pi.sjtu.edu.cn.1016590"
+"node068.pi.sjtu.edu.cn.1017495"
+"node068.pi.sjtu.edu.cn.1017930"
+"node068.pi.sjtu.edu.cn.1017378"
+"node068.pi.sjtu.edu.cn.1016478"
+"node068.pi.sjtu.edu.cn.1017977"
+"node068.pi.sjtu.edu.cn.1017961"
+"node068.pi.sjtu.edu.cn.1017687"
+"node068.pi.sjtu.edu.cn.1017991"
+"node068.pi.sjtu.edu.cn.1017555"
+"node068.pi.sjtu.edu.cn.1017816"
+"node068.pi.sjtu.edu.cn.1017756"
+"node068.pi.sjtu.edu.cn.1016798"
+"node068.pi.sjtu.edu.cn.1016163"
+"node068.pi.sjtu.edu.cn.1017604"
+"node068.pi.sjtu.edu.cn.1016555"
+"node068.pi.sjtu.edu.cn.1016464"
+"node068.pi.sjtu.edu.cn.1017024"
+"node068.pi.sjtu.edu.cn.1018082"
+"node068.pi.sjtu.edu.cn.1016341"
+"node068.pi.sjtu.edu.cn.1016797"
+"node068.pi.sjtu.edu.cn.1016385"
+"node068.pi.sjtu.edu.cn.1016146"
+"node068.pi.sjtu.edu.cn.1016502"
+"node068.pi.sjtu.edu.cn.1017931"
+"node068.pi.sjtu.edu.cn.1016072"
+"node068.pi.sjtu.edu.cn.1017448"
+"node068.pi.sjtu.edu.cn.1017280"
+"node068.pi.sjtu.edu.cn.1017623"
+"node068.pi.sjtu.edu.cn.1016247"
+"node068.pi.sjtu.edu.cn.1017939"
+"node068.pi.sjtu.edu.cn.1016213"
+"node068.pi.sjtu.edu.cn.1017032"
+"node068.pi.sjtu.edu.cn.1017959"
+"node068.pi.sjtu.edu.cn.1017535"
+"node068.pi.sjtu.edu.cn.1016406"
+"node068.pi.sjtu.edu.cn.1017375"
+"node068.pi.sjtu.edu.cn.1017761"
+"node068.pi.sjtu.edu.cn.1018020"
+"node068.pi.sjtu.edu.cn.1016562"
+"node068.pi.sjtu.edu.cn.1016118"
+"node068.pi.sjtu.edu.cn.1016259"
+"node068.pi.sjtu.edu.cn.1016073"
+"node068.pi.sjtu.edu.cn.1017367"
+"node068.pi.sjtu.edu.cn.1017354"
+"node068.pi.sjtu.edu.cn.1016808"
+"node068.pi.sjtu.edu.cn.1017649"
+"node068.pi.sjtu.edu.cn.1016613"
+"node068.pi.sjtu.edu.cn.1017776"
+"node068.pi.sjtu.edu.cn.1017932"
+"node068.pi.sjtu.edu.cn.1016868"
+"node068.pi.sjtu.edu.cn.1016977"
+"node068.pi.sjtu.edu.cn.1017912"
+"node068.pi.sjtu.edu.cn.1017397"
+"node068.pi.sjtu.edu.cn.1016684"
+"node068.pi.sjtu.edu.cn.1017187"
+"node068.pi.sjtu.edu.cn.1016621"
+"node068.pi.sjtu.edu.cn.1017166"
+"node068.pi.sjtu.edu.cn.1017382"
+"node068.pi.sjtu.edu.cn.1016657"
+"node068.pi.sjtu.edu.cn.1017986"
+"node068.pi.sjtu.edu.cn.1017552"
+)
+
+Pstream initialised with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.001545
+
+
+Reading g
+Selecting timeIntegrator: RK4
+Reading phaseProperties dictionary
+
+Selecting compressibleSystem: singlePhaseCompressibleSystem
+Selecting fluxScheme: AUSM+up
+Selecting thermodynamics package fluid<basic<const<hConst<idealGas<specie>>>>>
+Selecting turbulence model type LES
+Selecting LES turbulence model sstTransitionDES
+Selecting LES delta type vanDriest
+Selecting LES delta type cubeRootVol
+--> FOAM Warning : 
+    From function void Foam::LESModels::cubeRootVolDelta::calcDelta()
+    in file LES/LESdeltas/cubeRootVolDelta/cubeRootVolDelta.C at line 55
+    Case is 2D, LES is not strictly applicable
+
+Selecting patchDistMethod meshWave
+LES
+{
+    LESModel        sstTransitionDES;
+    turbulence      on;
+    printCoeffs     on;
+    delta           vanDriest;
+    vanDriestCoeffs
+    {
+        delta           cubeRootVol;
+        cubeRootVolCoeffs
+        {
+            deltaCoeff      2;
+        }
+    }
+    Ce              1.048;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    freeStreamU     360.15;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+    kappa           0.41;
+    CDES            0.61;
+}
+
+Selecting thermophysical transport type LES
+Selecting default LES thermophysical transport model unityLewisEddyDiffusivity
+Creating fvModels from "constant/fvModels"
+
+Selecting finite volume model type clouds
+    Name: particles
+Clouds not active: Neither "constant/clouds" nor "constant/cloudProperties" found
+
+Starting time loop
+
+Max Courant Number = 0.621244
+Time = 0.00154501
+
+Calculating Fluxes
+
+RK4: step 1
+Solving compressibleSystem:
+
+RK4: step 2
+Solving compressibleSystem:
+
+RK4: step 3
+Solving compressibleSystem:
+
+RK4: step 4
+Solving compressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.16821e-06, Final residual = 8.67572e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.56252e-07, Final residual = 4.57681e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.13447e-07, Final residual = 9.51997e-11, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.07328e-07, Final residual = 6.58895e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 5.06132e-06, Final residual = 8.89503e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 3.66863e-06, Final residual = 4.63763e-10, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 2.85075e-05, Final residual = 3.0264e-09, No Iterations 1
+max(p): 165625, min(p): 41473.2
+max(T): 386.962, min(T): 249.176
+ExecutionTime = 4.69 s  ClockTime = 9 s
+
+Max Courant Number = 0.621248
+Time = 0.00154502
+
+Calculating Fluxes
+
+RK4: step 1
+Solving compressibleSystem:
+
+RK4: step 2
+Solving compressibleSystem:
+
+RK4: step 3
+Solving compressibleSystem:
+
+RK4: step 4
+Solving compressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.16822e-06, Final residual = 8.6755e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.56255e-07, Final residual = 4.57679e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.13341e-07, Final residual = 9.43966e-11, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.07341e-07, Final residual = 6.58899e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 5.0613e-06, Final residual = 8.89458e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 3.66859e-06, Final residual = 4.63725e-10, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 2.85062e-05, Final residual = 3.02619e-09, No Iterations 1
+max(p): 165625, min(p): 41474.4
+max(T): 386.962, min(T): 249.176
+ExecutionTime = 5.89 s  ClockTime = 10 s
+
+Max Courant Number = 0.621252
+Time = 0.00154503
+
+Calculating Fluxes
+
+RK4: step 1
+Solving compressibleSystem:
+
+RK4: step 2
+Solving compressibleSystem:
+
+RK4: step 3
+Solving compressibleSystem:
+
+RK4: step 4
+Solving compressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.16822e-06, Final residual = 8.67527e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.56257e-07, Final residual = 4.57678e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.13288e-07, Final residual = 9.41234e-11, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.07356e-07, Final residual = 6.589e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 5.06127e-06, Final residual = 8.89412e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 3.66857e-06, Final residual = 4.63684e-10, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 2.85051e-05, Final residual = 3.02611e-09, No Iterations 1
+max(p): 165625, min(p): 41475.5
+max(T): 386.962, min(T): 249.175
+ExecutionTime = 5.95 s  ClockTime = 10 s
+
+Max Courant Number = 0.621255
+Time = 0.00154504
+
+Calculating Fluxes
+
+RK4: step 1
+Solving compressibleSystem:
+
+RK4: step 2
+Solving compressibleSystem:
+
+RK4: step 3
+Solving compressibleSystem:
+
+RK4: step 4
+Solving compressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.16822e-06, Final residual = 8.67505e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.5626e-07, Final residual = 4.57677e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.13253e-07, Final residual = 9.40039e-11, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.07371e-07, Final residual = 6.58898e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 5.06124e-06, Final residual = 8.89366e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 3.66858e-06, Final residual = 4.63646e-10, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 2.85041e-05, Final residual = 3.02602e-09, No Iterations 1
+max(p): 165625, min(p): 41476.7
+max(T): 386.962, min(T): 249.175
+ExecutionTime = 6.01 s  ClockTime = 10 s
+
+Max Courant Number = 0.621259
+Time = 0.00154505
+
+Calculating Fluxes
+
+RK4: step 1
+Solving compressibleSystem:
+
+RK4: step 2
+Solving compressibleSystem:
+
+RK4: step 3
+Solving compressibleSystem:
+
+RK4: step 4
+Solving compressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.16823e-06, Final residual = 8.67486e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.56263e-07, Final residual = 4.57675e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.13226e-07, Final residual = 9.39368e-11, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.07385e-07, Final residual = 6.58893e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 5.06122e-06, Final residual = 8.89319e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 3.66859e-06, Final residual = 4.6362e-10, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 2.85031e-05, Final residual = 3.02592e-09, No Iterations 1
+max(p): 165625, min(p): 41477.9
+max(T): 386.962, min(T): 249.175
+ExecutionTime = 6.06 s  ClockTime = 10 s
+

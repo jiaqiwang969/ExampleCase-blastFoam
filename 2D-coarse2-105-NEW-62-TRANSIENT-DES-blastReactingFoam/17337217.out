@@ -1,0 +1,2305 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-2dfbc15bc6f1
+Exec   : /opt/OpenFOAM/OpenFOAM-9/platforms/linux64GccDPInt32Opt/bin/decomposePar -latestTime
+Date   : Jul 23 2022
+Time   : 12:18:34
+Host   : "node015.pi.sjtu.edu.cn"
+PID    : 1179023
+I/O    : collated (maxThreadFileBufferSize 2e+09)
+         Threading activated since maxThreadFileBufferSize > 0.
+         Requires large enough buffer to collect all data or thread support 
+         enabled in MPI. If thread support cannot be enabled, deactivate
+         threading by setting maxThreadFileBufferSize to 0 in
+         $FOAM_ETC/controlDict
+Case   : /dssg/home/acct-medgm/medgm/A-DLR_Buffet/01-STEADY-2D-hisa-wallFunc-medium-gamma-NEWSTART/STEADY-coarse2-105-NEW-62-TRANSIENT-DES-blastReactingFoam
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Reading "decomposeParDict"
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod structured
+Selecting decompositionMethod scotch
+
+Finished decomposition in 0.3 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 1529
+    Number of faces shared with processor 1 = 54
+    Number of faces shared with processor 2 = 53
+    Number of faces shared with processor 4 = 38
+    Number of processor patches = 3
+    Number of processor faces = 145
+    Number of boundary faces = 3183
+
+Processor 1
+    Number of cells = 1511
+    Number of faces shared with processor 0 = 54
+    Number of faces shared with processor 3 = 46
+    Number of faces shared with processor 4 = 11
+    Number of faces shared with processor 6 = 34
+    Number of faces shared with processor 7 = 17
+    Number of processor patches = 5
+    Number of processor faces = 162
+    Number of boundary faces = 3050
+
+Processor 2
+    Number of cells = 1516
+    Number of faces shared with processor 0 = 53
+    Number of faces shared with processor 3 = 39
+    Number of faces shared with processor 4 = 3
+    Number of faces shared with processor 5 = 46
+    Number of processor patches = 4
+    Number of processor faces = 141
+    Number of boundary faces = 3073
+
+Processor 3
+    Number of cells = 1521
+    Number of faces shared with processor 1 = 46
+    Number of faces shared with processor 2 = 39
+    Number of faces shared with processor 5 = 11
+    Number of faces shared with processor 7 = 30
+    Number of processor patches = 4
+    Number of processor faces = 126
+    Number of boundary faces = 3088
+
+Processor 4
+    Number of cells = 1533
+    Number of faces shared with processor 0 = 38
+    Number of faces shared with processor 1 = 11
+    Number of faces shared with processor 2 = 3
+    Number of faces shared with processor 5 = 42
+    Number of faces shared with processor 6 = 39
+    Number of faces shared with processor 13 = 39
+    Number of faces shared with processor 14 = 8
+    Number of faces shared with processor 15 = 14
+    Number of processor patches = 8
+    Number of processor faces = 194
+    Number of boundary faces = 3142
+
+Processor 5
+    Number of cells = 1529
+    Number of faces shared with processor 2 = 46
+    Number of faces shared with processor 3 = 11
+    Number of faces shared with processor 4 = 42
+    Number of faces shared with processor 7 = 39
+    Number of faces shared with processor 14 = 40
+    Number of processor patches = 5
+    Number of processor faces = 178
+    Number of boundary faces = 3058
+
+Processor 6
+    Number of cells = 1536
+    Number of faces shared with processor 1 = 34
+    Number of faces shared with processor 4 = 39
+    Number of faces shared with processor 7 = 60
+    Number of faces shared with processor 8 = 35
+    Number of faces shared with processor 13 = 20
+    Number of faces shared with processor 14 = 4
+    Number of processor patches = 6
+    Number of processor faces = 192
+    Number of boundary faces = 3072
+
+Processor 7
+    Number of cells = 1521
+    Number of faces shared with processor 1 = 17
+    Number of faces shared with processor 3 = 30
+    Number of faces shared with processor 5 = 39
+    Number of faces shared with processor 6 = 60
+    Number of faces shared with processor 14 = 46
+    Number of processor patches = 5
+    Number of processor faces = 192
+    Number of boundary faces = 3042
+
+Processor 8
+    Number of cells = 1515
+    Number of faces shared with processor 6 = 35
+    Number of faces shared with processor 9 = 40
+    Number of faces shared with processor 10 = 22
+    Number of faces shared with processor 11 = 34
+    Number of faces shared with processor 13 = 34
+    Number of faces shared with processor 14 = 29
+    Number of processor patches = 6
+    Number of processor faces = 194
+    Number of boundary faces = 3030
+
+Processor 9
+    Number of cells = 1533
+    Number of faces shared with processor 8 = 40
+    Number of faces shared with processor 10 = 31
+    Number of faces shared with processor 12 = 7
+    Number of faces shared with processor 12 = 29
+    Number of faces shared with processor 13 = 25
+    Number of faces shared with processor 28 = 26
+    Number of faces shared with processor 28 = 1
+    Number of faces shared with processor 29 = 24
+    Number of faces shared with processor 30 = 3
+    Number of processor patches = 9
+    Number of processor faces = 186
+    Number of boundary faces = 3072
+
+Processor 10
+    Number of cells = 1537
+    Number of faces shared with processor 8 = 22
+    Number of faces shared with processor 9 = 31
+    Number of faces shared with processor 11 = 62
+    Number of faces shared with processor 29 = 53
+    Number of faces shared with processor 31 = 30
+    Number of processor patches = 5
+    Number of processor faces = 198
+    Number of boundary faces = 3074
+
+Processor 11
+    Number of cells = 1540
+    Number of faces shared with processor 8 = 34
+    Number of faces shared with processor 10 = 62
+    Number of faces shared with processor 12 = 39
+    Number of faces shared with processor 14 = 19
+    Number of faces shared with processor 15 = 38
+    Number of faces shared with processor 31 = 30
+    Number of processor patches = 6
+    Number of processor faces = 222
+    Number of boundary faces = 3080
+
+Processor 12
+    Number of cells = 1529
+    Number of faces shared with processor 9 = 7
+    Number of faces shared with processor 9 = 29
+    Number of faces shared with processor 11 = 39
+    Number of faces shared with processor 13 = 22
+    Number of faces shared with processor 15 = 38
+    Number of faces shared with processor 30 = 37
+    Number of faces shared with processor 31 = 14
+    Number of processor patches = 7
+    Number of processor faces = 186
+    Number of boundary faces = 3058
+
+Processor 13
+    Number of cells = 1537
+    Number of faces shared with processor 4 = 39
+    Number of faces shared with processor 6 = 20
+    Number of faces shared with processor 8 = 34
+    Number of faces shared with processor 9 = 25
+    Number of faces shared with processor 12 = 22
+    Number of faces shared with processor 15 = 44
+    Number of processor patches = 6
+    Number of processor faces = 184
+    Number of boundary faces = 3156
+
+Processor 14
+    Number of cells = 1530
+    Number of faces shared with processor 4 = 8
+    Number of faces shared with processor 5 = 40
+    Number of faces shared with processor 6 = 4
+    Number of faces shared with processor 7 = 46
+    Number of faces shared with processor 8 = 29
+    Number of faces shared with processor 11 = 19
+    Number of faces shared with processor 15 = 70
+    Number of processor patches = 7
+    Number of processor faces = 216
+    Number of boundary faces = 3060
+
+Processor 15
+    Number of cells = 1521
+    Number of faces shared with processor 4 = 14
+    Number of faces shared with processor 11 = 38
+    Number of faces shared with processor 12 = 38
+    Number of faces shared with processor 13 = 44
+    Number of faces shared with processor 14 = 70
+    Number of processor patches = 5
+    Number of processor faces = 204
+    Number of boundary faces = 3042
+
+Processor 16
+    Number of cells = 1511
+    Number of faces shared with processor 17 = 52
+    Number of faces shared with processor 18 = 21
+    Number of faces shared with processor 25 = 42
+    Number of faces shared with processor 26 = 29
+    Number of processor patches = 4
+    Number of processor faces = 144
+    Number of boundary faces = 3064
+
+Processor 17
+    Number of cells = 1511
+    Number of faces shared with processor 16 = 52
+    Number of faces shared with processor 18 = 25
+    Number of faces shared with processor 19 = 35
+    Number of faces shared with processor 51 = 47
+    Number of processor patches = 4
+    Number of processor faces = 159
+    Number of boundary faces = 3055
+
+Processor 18
+    Number of cells = 1540
+    Number of faces shared with processor 16 = 21
+    Number of faces shared with processor 17 = 25
+    Number of faces shared with processor 19 = 30
+    Number of faces shared with processor 20 = 22
+    Number of faces shared with processor 23 = 50
+    Number of faces shared with processor 25 = 12
+    Number of faces shared with processor 28 = 34
+    Number of processor patches = 7
+    Number of processor faces = 194
+    Number of boundary faces = 3140
+
+Processor 19
+    Number of cells = 1536
+    Number of faces shared with processor 17 = 35
+    Number of faces shared with processor 18 = 30
+    Number of faces shared with processor 20 = 22
+    Number of faces shared with processor 21 = 32
+    Number of faces shared with processor 50 = 28
+    Number of faces shared with processor 51 = 27
+    Number of processor patches = 6
+    Number of processor faces = 174
+    Number of boundary faces = 3156
+
+Processor 20
+    Number of cells = 1520
+    Number of faces shared with processor 18 = 22
+    Number of faces shared with processor 19 = 22
+    Number of faces shared with processor 21 = 51
+    Number of faces shared with processor 22 = 24
+    Number of faces shared with processor 23 = 31
+    Number of processor patches = 5
+    Number of processor faces = 150
+    Number of boundary faces = 3068
+
+Processor 21
+    Number of cells = 1516
+    Number of faces shared with processor 19 = 32
+    Number of faces shared with processor 20 = 51
+    Number of faces shared with processor 49 = 34
+    Number of faces shared with processor 50 = 21
+    Number of processor patches = 4
+    Number of processor faces = 138
+    Number of boundary faces = 3072
+
+Processor 22
+    Number of cells = 1520
+    Number of faces shared with processor 20 = 24
+    Number of faces shared with processor 23 = 48
+    Number of faces shared with processor 26 = 19
+    Number of faces shared with processor 27 = 34
+    Number of processor patches = 4
+    Number of processor faces = 125
+    Number of boundary faces = 3097
+
+Processor 23
+    Number of cells = 1511
+    Number of faces shared with processor 18 = 50
+    Number of faces shared with processor 20 = 31
+    Number of faces shared with processor 22 = 48
+    Number of faces shared with processor 27 = 33
+    Number of faces shared with processor 28 = 6
+    Number of faces shared with processor 30 = 16
+    Number of processor patches = 6
+    Number of processor faces = 184
+    Number of boundary faces = 3062
+
+Processor 24
+    Number of cells = 1526
+    Number of faces shared with processor 25 = 55
+    Number of faces shared with processor 26 = 19
+    Number of faces shared with processor 27 = 55
+    Number of faces shared with processor 29 = 10
+    Number of faces shared with processor 31 = 59
+    Number of processor patches = 5
+    Number of processor faces = 198
+    Number of boundary faces = 3052
+
+Processor 25
+    Number of cells = 1528
+    Number of faces shared with processor 16 = 42
+    Number of faces shared with processor 18 = 12
+    Number of faces shared with processor 24 = 55
+    Number of faces shared with processor 26 = 20
+    Number of faces shared with processor 28 = 23
+    Number of faces shared with processor 29 = 32
+    Number of processor patches = 6
+    Number of processor faces = 184
+    Number of boundary faces = 3056
+
+Processor 26
+    Number of cells = 1541
+    Number of faces shared with processor 16 = 29
+    Number of faces shared with processor 22 = 19
+    Number of faces shared with processor 24 = 19
+    Number of faces shared with processor 25 = 20
+    Number of faces shared with processor 27 = 40
+    Number of processor patches = 5
+    Number of processor faces = 127
+    Number of boundary faces = 3137
+
+Processor 27
+    Number of cells = 1535
+    Number of faces shared with processor 22 = 34
+    Number of faces shared with processor 23 = 33
+    Number of faces shared with processor 24 = 55
+    Number of faces shared with processor 26 = 40
+    Number of faces shared with processor 30 = 28
+    Number of faces shared with processor 31 = 6
+    Number of processor patches = 6
+    Number of processor faces = 196
+    Number of boundary faces = 3070
+
+Processor 28
+    Number of cells = 1529
+    Number of faces shared with processor 9 = 26
+    Number of faces shared with processor 9 = 1
+    Number of faces shared with processor 18 = 34
+    Number of faces shared with processor 23 = 6
+    Number of faces shared with processor 25 = 23
+    Number of faces shared with processor 29 = 66
+    Number of faces shared with processor 30 = 58
+    Number of processor patches = 7
+    Number of processor faces = 214
+    Number of boundary faces = 3058
+
+Processor 29
+    Number of cells = 1517
+    Number of faces shared with processor 9 = 24
+    Number of faces shared with processor 10 = 53
+    Number of faces shared with processor 24 = 10
+    Number of faces shared with processor 25 = 32
+    Number of faces shared with processor 28 = 66
+    Number of faces shared with processor 31 = 11
+    Number of processor patches = 6
+    Number of processor faces = 196
+    Number of boundary faces = 3034
+
+Processor 30
+    Number of cells = 1535
+    Number of faces shared with processor 9 = 3
+    Number of faces shared with processor 12 = 37
+    Number of faces shared with processor 23 = 16
+    Number of faces shared with processor 27 = 28
+    Number of faces shared with processor 28 = 58
+    Number of faces shared with processor 31 = 50
+    Number of processor patches = 6
+    Number of processor faces = 192
+    Number of boundary faces = 3070
+
+Processor 31
+    Number of cells = 1531
+    Number of faces shared with processor 10 = 30
+    Number of faces shared with processor 11 = 30
+    Number of faces shared with processor 12 = 14
+    Number of faces shared with processor 24 = 59
+    Number of faces shared with processor 27 = 6
+    Number of faces shared with processor 29 = 11
+    Number of faces shared with processor 30 = 50
+    Number of processor patches = 7
+    Number of processor faces = 200
+    Number of boundary faces = 3062
+
+Processor 32
+    Number of cells = 1522
+    Number of faces shared with processor 33 = 33
+    Number of faces shared with processor 34 = 19
+    Number of faces shared with processor 35 = 34
+    Number of faces shared with processor 38 = 27
+    Number of faces shared with processor 39 = 8
+    Number of faces shared with processor 45 = 34
+    Number of faces shared with processor 47 = 37
+    Number of processor patches = 7
+    Number of processor faces = 192
+    Number of boundary faces = 3044
+
+Processor 33
+    Number of cells = 1529
+    Number of faces shared with processor 32 = 33
+    Number of faces shared with processor 34 = 37
+    Number of faces shared with processor 37 = 39
+    Number of faces shared with processor 38 = 4
+    Number of faces shared with processor 44 = 21
+    Number of faces shared with processor 46 = 33
+    Number of faces shared with processor 47 = 13
+    Number of processor patches = 7
+    Number of processor faces = 180
+    Number of boundary faces = 3130
+
+Processor 34
+    Number of cells = 1537
+    Number of faces shared with processor 32 = 19
+    Number of faces shared with processor 33 = 37
+    Number of faces shared with processor 35 = 54
+    Number of faces shared with processor 37 = 49
+    Number of faces shared with processor 57 = 24
+    Number of faces shared with processor 59 = 11
+    Number of processor patches = 6
+    Number of processor faces = 194
+    Number of boundary faces = 3074
+
+Processor 35
+    Number of cells = 1507
+    Number of faces shared with processor 32 = 34
+    Number of faces shared with processor 34 = 54
+    Number of faces shared with processor 39 = 53
+    Number of faces shared with processor 56 = 22
+    Number of faces shared with processor 57 = 33
+    Number of processor patches = 5
+    Number of processor faces = 196
+    Number of boundary faces = 3014
+
+Processor 36
+    Number of cells = 1511
+    Number of faces shared with processor 37 = 55
+    Number of faces shared with processor 39 = 53
+    Number of faces shared with processor 56 = 36
+    Number of faces shared with processor 59 = 52
+    Number of processor patches = 4
+    Number of processor faces = 196
+    Number of boundary faces = 3022
+
+Processor 37
+    Number of cells = 1520
+    Number of faces shared with processor 33 = 39
+    Number of faces shared with processor 34 = 49
+    Number of faces shared with processor 36 = 55
+    Number of faces shared with processor 38 = 44
+    Number of faces shared with processor 39 = 8
+    Number of faces shared with processor 59 = 13
+    Number of processor patches = 6
+    Number of processor faces = 208
+    Number of boundary faces = 3134
+
+Processor 38
+    Number of cells = 1536
+    Number of faces shared with processor 32 = 27
+    Number of faces shared with processor 33 = 4
+    Number of faces shared with processor 37 = 44
+    Number of faces shared with processor 39 = 51
+    Number of faces shared with processor 44 = 38
+    Number of faces shared with processor 45 = 30
+    Number of processor patches = 6
+    Number of processor faces = 194
+    Number of boundary faces = 3072
+
+Processor 39
+    Number of cells = 1529
+    Number of faces shared with processor 32 = 8
+    Number of faces shared with processor 35 = 53
+    Number of faces shared with processor 36 = 53
+    Number of faces shared with processor 37 = 8
+    Number of faces shared with processor 38 = 51
+    Number of faces shared with processor 56 = 23
+    Number of processor patches = 6
+    Number of processor faces = 196
+    Number of boundary faces = 3058
+
+Processor 40
+    Number of cells = 1535
+    Number of faces shared with processor 41 = 54
+    Number of faces shared with processor 42 = 42
+    Number of faces shared with processor 44 = 34
+    Number of faces shared with processor 45 = 8
+    Number of processor patches = 4
+    Number of processor faces = 138
+    Number of boundary faces = 3110
+
+Processor 41
+    Number of cells = 1527
+    Number of faces shared with processor 40 = 54
+    Number of faces shared with processor 43 = 45
+    Number of faces shared with processor 45 = 32
+    Number of faces shared with processor 47 = 17
+    Number of processor patches = 4
+    Number of processor faces = 148
+    Number of boundary faces = 3082
+
+Processor 42
+    Number of cells = 1518
+    Number of faces shared with processor 40 = 42
+    Number of faces shared with processor 43 = 47
+    Number of faces shared with processor 44 = 5
+    Number of faces shared with processor 46 = 45
+    Number of faces shared with processor 46 = 1
+    Number of processor patches = 5
+    Number of processor faces = 140
+    Number of boundary faces = 3156
+
+Processor 43
+    Number of cells = 1521
+    Number of faces shared with processor 41 = 45
+    Number of faces shared with processor 42 = 47
+    Number of faces shared with processor 46 = 6
+    Number of faces shared with processor 47 = 42
+    Number of processor patches = 4
+    Number of processor faces = 140
+    Number of boundary faces = 3078
+
+Processor 44
+    Number of cells = 1520
+    Number of faces shared with processor 33 = 21
+    Number of faces shared with processor 38 = 38
+    Number of faces shared with processor 40 = 34
+    Number of faces shared with processor 42 = 5
+    Number of faces shared with processor 45 = 46
+    Number of faces shared with processor 46 = 60
+    Number of processor patches = 6
+    Number of processor faces = 204
+    Number of boundary faces = 3040
+
+Processor 45
+    Number of cells = 1543
+    Number of faces shared with processor 32 = 34
+    Number of faces shared with processor 38 = 30
+    Number of faces shared with processor 40 = 8
+    Number of faces shared with processor 41 = 32
+    Number of faces shared with processor 44 = 46
+    Number of faces shared with processor 47 = 32
+    Number of processor patches = 6
+    Number of processor faces = 182
+    Number of boundary faces = 3086
+
+Processor 46
+    Number of cells = 1530
+    Number of faces shared with processor 33 = 33
+    Number of faces shared with processor 42 = 45
+    Number of faces shared with processor 42 = 1
+    Number of faces shared with processor 43 = 6
+    Number of faces shared with processor 44 = 60
+    Number of faces shared with processor 47 = 39
+    Number of processor patches = 6
+    Number of processor faces = 184
+    Number of boundary faces = 3138
+
+Processor 47
+    Number of cells = 1537
+    Number of faces shared with processor 32 = 37
+    Number of faces shared with processor 33 = 13
+    Number of faces shared with processor 41 = 17
+    Number of faces shared with processor 43 = 42
+    Number of faces shared with processor 45 = 32
+    Number of faces shared with processor 46 = 39
+    Number of processor patches = 6
+    Number of processor faces = 180
+    Number of boundary faces = 3074
+
+Processor 48
+    Number of cells = 1517
+    Number of faces shared with processor 49 = 56
+    Number of faces shared with processor 50 = 18
+    Number of faces shared with processor 53 = 10
+    Number of faces shared with processor 55 = 22
+    Number of faces shared with processor 60 = 50
+    Number of faces shared with processor 62 = 32
+    Number of processor patches = 6
+    Number of processor faces = 188
+    Number of boundary faces = 3062
+
+Processor 49
+    Number of cells = 1511
+    Number of faces shared with processor 21 = 34
+    Number of faces shared with processor 48 = 56
+    Number of faces shared with processor 50 = 42
+    Number of processor patches = 3
+    Number of processor faces = 132
+    Number of boundary faces = 3066
+
+Processor 50
+    Number of cells = 1529
+    Number of faces shared with processor 19 = 28
+    Number of faces shared with processor 21 = 21
+    Number of faces shared with processor 48 = 18
+    Number of faces shared with processor 49 = 42
+    Number of faces shared with processor 51 = 38
+    Number of faces shared with processor 53 = 40
+    Number of faces shared with processor 53 = 1
+    Number of processor patches = 7
+    Number of processor faces = 188
+    Number of boundary faces = 3130
+
+Processor 51
+    Number of cells = 1538
+    Number of faces shared with processor 17 = 47
+    Number of faces shared with processor 19 = 27
+    Number of faces shared with processor 50 = 38
+    Number of faces shared with processor 52 = 41
+    Number of faces shared with processor 53 = 14
+    Number of processor patches = 5
+    Number of processor faces = 167
+    Number of boundary faces = 3099
+
+Processor 52
+    Number of cells = 1511
+    Number of faces shared with processor 51 = 41
+    Number of faces shared with processor 53 = 53
+    Number of faces shared with processor 54 = 25
+    Number of processor patches = 3
+    Number of processor faces = 119
+    Number of boundary faces = 3079
+
+Processor 53
+    Number of cells = 1521
+    Number of faces shared with processor 48 = 10
+    Number of faces shared with processor 50 = 40
+    Number of faces shared with processor 50 = 1
+    Number of faces shared with processor 51 = 14
+    Number of faces shared with processor 52 = 53
+    Number of faces shared with processor 54 = 15
+    Number of faces shared with processor 55 = 58
+    Number of faces shared with processor 55 = 1
+    Number of processor patches = 8
+    Number of processor faces = 192
+    Number of boundary faces = 3076
+
+Processor 54
+    Number of cells = 1538
+    Number of faces shared with processor 52 = 25
+    Number of faces shared with processor 53 = 15
+    Number of faces shared with processor 55 = 39
+    Number of faces shared with processor 63 = 44
+    Number of processor patches = 4
+    Number of processor faces = 123
+    Number of boundary faces = 3119
+
+Processor 55
+    Number of cells = 1528
+    Number of faces shared with processor 48 = 22
+    Number of faces shared with processor 53 = 58
+    Number of faces shared with processor 53 = 1
+    Number of faces shared with processor 54 = 39
+    Number of faces shared with processor 58 = 44
+    Number of faces shared with processor 59 = 12
+    Number of faces shared with processor 60 = 8
+    Number of faces shared with processor 63 = 34
+    Number of processor patches = 8
+    Number of processor faces = 218
+    Number of boundary faces = 3110
+
+Processor 56
+    Number of cells = 1511
+    Number of faces shared with processor 35 = 22
+    Number of faces shared with processor 36 = 36
+    Number of faces shared with processor 39 = 23
+    Number of faces shared with processor 57 = 30
+    Number of faces shared with processor 59 = 20
+    Number of faces shared with processor 61 = 57
+    Number of processor patches = 6
+    Number of processor faces = 188
+    Number of boundary faces = 3022
+
+Processor 57
+    Number of cells = 1524
+    Number of faces shared with processor 34 = 24
+    Number of faces shared with processor 35 = 33
+    Number of faces shared with processor 56 = 30
+    Number of faces shared with processor 58 = 53
+    Number of faces shared with processor 59 = 26
+    Number of faces shared with processor 60 = 20
+    Number of faces shared with processor 61 = 14
+    Number of processor patches = 7
+    Number of processor faces = 200
+    Number of boundary faces = 3048
+
+Processor 58
+    Number of cells = 1511
+    Number of faces shared with processor 55 = 44
+    Number of faces shared with processor 57 = 53
+    Number of faces shared with processor 59 = 52
+    Number of faces shared with processor 59 = 1
+    Number of faces shared with processor 60 = 42
+    Number of processor patches = 5
+    Number of processor faces = 192
+    Number of boundary faces = 3080
+
+Processor 59
+    Number of cells = 1539
+    Number of faces shared with processor 34 = 11
+    Number of faces shared with processor 36 = 52
+    Number of faces shared with processor 37 = 13
+    Number of faces shared with processor 55 = 12
+    Number of faces shared with processor 56 = 20
+    Number of faces shared with processor 57 = 26
+    Number of faces shared with processor 58 = 52
+    Number of faces shared with processor 58 = 1
+    Number of faces shared with processor 61 = 36
+    Number of faces shared with processor 63 = 3
+    Number of processor patches = 10
+    Number of processor faces = 226
+    Number of boundary faces = 3132
+
+Processor 60
+    Number of cells = 1528
+    Number of faces shared with processor 48 = 50
+    Number of faces shared with processor 55 = 8
+    Number of faces shared with processor 57 = 20
+    Number of faces shared with processor 58 = 42
+    Number of faces shared with processor 61 = 42
+    Number of faces shared with processor 62 = 36
+    Number of faces shared with processor 63 = 8
+    Number of processor patches = 7
+    Number of processor faces = 206
+    Number of boundary faces = 3056
+
+Processor 61
+    Number of cells = 1514
+    Number of faces shared with processor 56 = 57
+    Number of faces shared with processor 57 = 14
+    Number of faces shared with processor 59 = 36
+    Number of faces shared with processor 60 = 42
+    Number of faces shared with processor 63 = 53
+    Number of processor patches = 5
+    Number of processor faces = 202
+    Number of boundary faces = 3028
+
+Processor 62
+    Number of cells = 1536
+    Number of faces shared with processor 48 = 32
+    Number of faces shared with processor 60 = 36
+    Number of faces shared with processor 63 = 66
+    Number of processor patches = 3
+    Number of processor faces = 134
+    Number of boundary faces = 3112
+
+Processor 63
+    Number of cells = 1541
+    Number of faces shared with processor 54 = 44
+    Number of faces shared with processor 55 = 34
+    Number of faces shared with processor 59 = 3
+    Number of faces shared with processor 60 = 8
+    Number of faces shared with processor 61 = 53
+    Number of faces shared with processor 62 = 66
+    Number of processor patches = 6
+    Number of processor faces = 208
+    Number of boundary faces = 3096
+
+Number of processor faces = 5725
+Max number of cells = 1543 (1.11402% above average 1526)
+Max number of processor patches = 10 (77.7778% above average 5.625)
+Max number of faces between processors = 226 (26.3231% above average 178.906)
+
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+Processor 4: field transfer
+Processor 5: field transfer
+Processor 6: field transfer
+Processor 7: field transfer
+Processor 8: field transfer
+Processor 9: field transfer
+Processor 10: field transfer
+Processor 11: field transfer
+Processor 12: field transfer
+Processor 13: field transfer
+Processor 14: field transfer
+Processor 15: field transfer
+Processor 16: field transfer
+Processor 17: field transfer
+Processor 18: field transfer
+Processor 19: field transfer
+Processor 20: field transfer
+Processor 21: field transfer
+Processor 22: field transfer
+Processor 23: field transfer
+Processor 24: field transfer
+Processor 25: field transfer
+Processor 26: field transfer
+Processor 27: field transfer
+Processor 28: field transfer
+Processor 29: field transfer
+Processor 30: field transfer
+Processor 31: field transfer
+Processor 32: field transfer
+Processor 33: field transfer
+Processor 34: field transfer
+Processor 35: field transfer
+Processor 36: field transfer
+Processor 37: field transfer
+Processor 38: field transfer
+Processor 39: field transfer
+Processor 40: field transfer
+Processor 41: field transfer
+Processor 42: field transfer
+Processor 43: field transfer
+Processor 44: field transfer
+Processor 45: field transfer
+Processor 46: field transfer
+Processor 47: field transfer
+Processor 48: field transfer
+Processor 49: field transfer
+Processor 50: field transfer
+Processor 51: field transfer
+Processor 52: field transfer
+Processor 53: field transfer
+Processor 54: field transfer
+Processor 55: field transfer
+Processor 56: field transfer
+Processor 57: field transfer
+Processor 58: field transfer
+Processor 59: field transfer
+Processor 60: field transfer
+Processor 61: field transfer
+Processor 62: field transfer
+Processor 63: field transfer
+
+End
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 9-2dfbc15bc6f1
+Exec   : /home/ofuser/OpenFOAM/ofuser-9/platforms/linux64GccDPInt32Opt/bin/blastReactingFoam -parallel
+Date   : Jul 23 2022
+Time   : 12:18:49
+Host   : "node015.pi.sjtu.edu.cn"
+PID    : 1181154
+I/O    : collated (maxThreadFileBufferSize 2e+09)
+         Threading activated since maxThreadFileBufferSize > 0.
+         Requires large enough buffer to collect all data or thread support 
+         enabled in MPI. If thread support cannot be enabled, deactivate
+         threading by setting maxThreadFileBufferSize to 0 in
+         $FOAM_ETC/controlDict
+Case   : /dssg/home/acct-medgm/medgm/A-DLR_Buffet/01-STEADY-2D-hisa-wallFunc-medium-gamma-NEWSTART/STEADY-coarse2-105-NEW-62-TRANSIENT-DES-blastReactingFoam
+nProcs : 64
+Slaves : 
+63
+(
+"node015.pi.sjtu.edu.cn.1181121"
+"node015.pi.sjtu.edu.cn.1181142"
+"node015.pi.sjtu.edu.cn.1180826"
+"node015.pi.sjtu.edu.cn.1179607"
+"node015.pi.sjtu.edu.cn.1180538"
+"node015.pi.sjtu.edu.cn.1179865"
+"node015.pi.sjtu.edu.cn.1181045"
+"node015.pi.sjtu.edu.cn.1180945"
+"node015.pi.sjtu.edu.cn.1179767"
+"node015.pi.sjtu.edu.cn.1179580"
+"node015.pi.sjtu.edu.cn.1179700"
+"node015.pi.sjtu.edu.cn.1181305"
+"node015.pi.sjtu.edu.cn.1179437"
+"node015.pi.sjtu.edu.cn.1181153"
+"node015.pi.sjtu.edu.cn.1179552"
+"node015.pi.sjtu.edu.cn.1180641"
+"node015.pi.sjtu.edu.cn.1180839"
+"node015.pi.sjtu.edu.cn.1181311"
+"node015.pi.sjtu.edu.cn.1180707"
+"node015.pi.sjtu.edu.cn.1180303"
+"node015.pi.sjtu.edu.cn.1181254"
+"node015.pi.sjtu.edu.cn.1180386"
+"node015.pi.sjtu.edu.cn.1179535"
+"node015.pi.sjtu.edu.cn.1180091"
+"node015.pi.sjtu.edu.cn.1181329"
+"node015.pi.sjtu.edu.cn.1180352"
+"node015.pi.sjtu.edu.cn.1179745"
+"node015.pi.sjtu.edu.cn.1180748"
+"node015.pi.sjtu.edu.cn.1180066"
+"node015.pi.sjtu.edu.cn.1180716"
+"node015.pi.sjtu.edu.cn.1180864"
+"node015.pi.sjtu.edu.cn.1181226"
+"node015.pi.sjtu.edu.cn.1179676"
+"node015.pi.sjtu.edu.cn.1180133"
+"node015.pi.sjtu.edu.cn.1179981"
+"node015.pi.sjtu.edu.cn.1180788"
+"node015.pi.sjtu.edu.cn.1179470"
+"node015.pi.sjtu.edu.cn.1179637"
+"node015.pi.sjtu.edu.cn.1179910"
+"node015.pi.sjtu.edu.cn.1180218"
+"node015.pi.sjtu.edu.cn.1180679"
+"node015.pi.sjtu.edu.cn.1180263"
+"node015.pi.sjtu.edu.cn.1181178"
+"node015.pi.sjtu.edu.cn.1181247"
+"node015.pi.sjtu.edu.cn.1179526"
+"node015.pi.sjtu.edu.cn.1181160"
+"node015.pi.sjtu.edu.cn.1180062"
+"node015.pi.sjtu.edu.cn.1181330"
+"node015.pi.sjtu.edu.cn.1181063"
+"node015.pi.sjtu.edu.cn.1181203"
+"node015.pi.sjtu.edu.cn.1181255"
+"node015.pi.sjtu.edu.cn.1180561"
+"node015.pi.sjtu.edu.cn.1179912"
+"node015.pi.sjtu.edu.cn.1180767"
+"node015.pi.sjtu.edu.cn.1180012"
+"node015.pi.sjtu.edu.cn.1179851"
+"node015.pi.sjtu.edu.cn.1180559"
+"node015.pi.sjtu.edu.cn.1180558"
+"node015.pi.sjtu.edu.cn.1179509"
+"node015.pi.sjtu.edu.cn.1179982"
+"node015.pi.sjtu.edu.cn.1181044"
+"node015.pi.sjtu.edu.cn.1181062"
+"node015.pi.sjtu.edu.cn.1181222"
+)
+
+Pstream initialised with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStamp (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+Reading g
+Selecting timeIntegrator: RK4
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          eConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting fluxScheme: Kurganov
+Selecting turbulence model type LES
+Selecting LES turbulence model sstTransitionDES
+Selecting LES delta type vanDriest
+Selecting LES delta type cubeRootVol
+--> FOAM Warning : 
+    From function void Foam::LESModels::cubeRootVolDelta::calcDelta()
+    in file LES/LESdeltas/cubeRootVolDelta/cubeRootVolDelta.C at line 55
+    Case is 2D, LES is not strictly applicable
+
+Selecting patchDistMethod meshWave
+LES
+{
+    LESModel        sstTransitionDES;
+    turbulence      on;
+    printCoeffs     on;
+    delta           vanDriest;
+    vanDriestCoeffs
+    {
+        delta           cubeRootVol;
+        cubeRootVolCoeffs
+        {
+            deltaCoeff      2;
+        }
+    }
+    Ce              1.048;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    freeStreamU     360.15;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+    kappa           0.41;
+    CDES            0.61;
+}
+
+Selecting thermophysical transport type LES
+Selecting default LES thermophysical transport model unityLewisEddyDiffusivity
+Selecting radiationModel none
+
+Starting time loop
+
+Mean and max Courant Numbers = 0.0239377 0.619116
+Time = 1e-08
+
+
+RK4: step 1
+Solving phaseCompressibleSystem:
+
+RK4: step 2
+Solving phaseCompressibleSystem:
+
+RK4: step 3
+Solving phaseCompressibleSystem:
+
+RK4: step 4
+Solving phaseCompressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.08638e-07, Final residual = 8.82312e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.96129e-07, Final residual = 3.53351e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.50175e-07, Final residual = 5.75652e-10, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.56565e-07, Final residual = 8.19369e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 1.60535e-06, Final residual = 5.28284e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 0.000299099, Final residual = 5.04457e-08, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 1.26618e-05, Final residual = 2.28713e-09, No Iterations 1
+max(p): 167070, min(p): 51353.5
+max(T): 375.55, min(T): 264.469
+ExecutionTime = 4.07 s  ClockTime = 5 s
+
+Mean and max Courant Numbers = 0.0239377 0.619094
+Time = 2e-08
+
+
+RK4: step 1
+Solving phaseCompressibleSystem:
+
+RK4: step 2
+Solving phaseCompressibleSystem:
+
+RK4: step 3
+Solving phaseCompressibleSystem:
+
+RK4: step 4
+Solving phaseCompressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.11558e-07, Final residual = 8.81953e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.97371e-07, Final residual = 3.53148e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.50249e-07, Final residual = 5.81763e-10, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 4.59966e-07, Final residual = 7.44585e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 1.57375e-06, Final residual = 4.94905e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 0.000298683, Final residual = 5.03672e-08, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 1.43732e-05, Final residual = 2.65041e-09, No Iterations 1
+max(p): 166872, min(p): 51470.1
+max(T): 375.456, min(T): 264.482
+ExecutionTime = 4.25 s  ClockTime = 5 s
+
+Mean and max Courant Numbers = 0.0239377 0.619101
+Time = 3e-08
+
+
+RK4: step 1
+Solving phaseCompressibleSystem:
+
+RK4: step 2
+Solving phaseCompressibleSystem:
+
+RK4: step 3
+Solving phaseCompressibleSystem:
+
+RK4: step 4
+Solving phaseCompressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.14803e-07, Final residual = 8.81684e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.98708e-07, Final residual = 3.52923e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.50615e-07, Final residual = 7.14759e-10, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 5.33761e-07, Final residual = 8.03448e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 1.57648e-06, Final residual = 4.93961e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 0.000298251, Final residual = 5.02897e-08, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 1.43092e-05, Final residual = 2.63244e-09, No Iterations 1
+max(p): 166802, min(p): 51544.3
+max(T): 375.389, min(T): 264.496
+ExecutionTime = 4.3 s  ClockTime = 5 s
+
+Mean and max Courant Numbers = 0.0239377 0.619112
+Time = 4e-08
+
+
+RK4: step 1
+Solving phaseCompressibleSystem:
+
+RK4: step 2
+Solving phaseCompressibleSystem:
+
+RK4: step 3
+Solving phaseCompressibleSystem:
+
+RK4: step 4
+Solving phaseCompressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.17954e-07, Final residual = 8.81406e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.99998e-07, Final residual = 3.52695e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.51248e-07, Final residual = 1.55176e-09, No Iterations 1
+smoothSolver:  Solving for omega, Initial residual = 5.9214e-07, Final residual = 8.38404e-11, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 1.57945e-06, Final residual = 4.93119e-10, No Iterations 1
+smoothSolver:  Solving for Ret, Initial residual = 0.00029782, Final residual = 5.02128e-08, No Iterations 1
+smoothSolver:  Solving for im, Initial residual = 1.42583e-05, Final residual = 2.6182e-09, No Iterations 1
+max(p): 166784, min(p): 51575.7
+max(T): 375.333, min(T): 264.51
+ExecutionTime = 4.34 s  ClockTime = 5 s
+
+Mean and max Courant Numbers = 0.0239378 0.619123
+Time = 5e-08
+
+
+RK4: step 1
+Solving phaseCompressibleSystem:
+
+RK4: step 2
+Solving phaseCompressibleSystem:
+
+RK4: step 3
+Solving phaseCompressibleSystem:
+
+RK4: step 4
+Solving phaseCompressibleSystem:
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.20876e-07, Final residual = 8.80834e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 3.01193e-07, Final residual = 3.53385e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.54582e-07, Final residual = 6.75944e+295, No Iterations 1000
+         [18] iter          Test           e/h          Cv/p          Tnew
+         [18] 0       327.955       21602.9         724.8 -7.69694e+103
+         [18] 1 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 2 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 3 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 4 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 5 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 6 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 7 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 8 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 9 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 10 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 11 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 12 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 13 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 14 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 15 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 16 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 17 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 18 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [19] iter          Test           e/h          Cv/p          Tnew
+         [19] 0       328.711       22150.8         724.8   1.16924e+49
+         [19] 1   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 2   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 3   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 4   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 5   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 6   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 7   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 8   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 9   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 10   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 11   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 12   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 13   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 14   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 15   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 16   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 17   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 18   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 19   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 20   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 21   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 22   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 23   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 24   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 25   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 26   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [20] iter          Test           e/h          Cv/p          Tnew
+         [20] 0       365.443         48774         724.8 -1.06275e+153
+         [20] 1 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 2 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 3 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 4 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 5 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 6 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 7 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 8 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 9 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 10 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 11 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 12 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 13 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 14 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 15 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 16 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 17 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 18 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 19 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 20 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 21 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 22 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [21] iter          Test           e/h          Cv/p          Tnew
+         [21] 0       367.067       49951.3         724.8  -6.55751e+39
+         [21] 1  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 2  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 3  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 4  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 5  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 6  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 7  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 8  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 9  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 10  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 11  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 12  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 13  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 14  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 15  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 16  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 17  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 18  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 19  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 20  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 21  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 22  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 23  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 24  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 25  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 26  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 27  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 28  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 29  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 30  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 31  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 32  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 33  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [22] iter          Test           e/h          Cv/p          Tnew
+         [22] 0       366.507       49545.4         724.8  5.81776e+223
+         [22] 1  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 2  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 3  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 4  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 5  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 6  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 7  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 8  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 9  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 10  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 11  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 12  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 13  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 14  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 15  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 16  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 17  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 18  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 19  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 20  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 21  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 22  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 23  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 24  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 25  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 26  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 27  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 28  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 29  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 30  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 31  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 32  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [23] iter          Test           e/h          Cv/p          Tnew
+         [23] 0       310.631       9046.51         724.8 -5.76074e+102
+         [23] 1 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 2 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 3 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 4 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 5 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 6 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 7 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 8 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 9 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 10 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 11 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 12 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 13 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 14 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 15 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 16 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 17 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 18 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 19 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 20 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 21 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 22 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 23 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 24 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 25 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 26 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 27 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 28 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 29 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 30 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 31 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 32 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 33 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 34 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 35 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 36 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 37 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [24] iter          Test           e/h          Cv/p          Tnew
+         [24] 0       271.776      -19116.1         724.8  -1.62802e+27
+         [24] 1  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 2  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 3  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 4  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 5  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 6  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 7  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 8  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 9  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 10  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 11  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 12  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 13  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 14  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 15  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 16  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 17  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 18  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 19  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 20  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 21  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 22  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 23  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 24  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 25  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 26  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 27  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 28  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 29  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 30  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 31  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 32  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 33  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 34  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 35  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 36  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 37  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 38  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 39  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 40  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 41  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 42  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 43  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 44  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 45  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 46  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 47  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [26] iter          Test           e/h          Cv/p          Tnew
+         [26] 0        347.41       35703.6         724.8 -2.70916e+105
+         [26] 1 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 2 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 3 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 4 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 5 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 6 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 7 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 8 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 9 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 10 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 11 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 12 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 13 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 14 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 15 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 16 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 17 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 18 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 19 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 20 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 21 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 22 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 23 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 24 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 25 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 26 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 27 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 28 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 29 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 30 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 31 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 32 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 33 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 34 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 35 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 36 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 37 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 38 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 39 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 40 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 41 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 42 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 43 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 44 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 45 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 46 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 47 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 48 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 49 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 50 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 51 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 52 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 53 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 54 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [27] iter          Test           e/h          Cv/p          Tnew
+         [27] 0       272.832      -18350.3         724.8   1.75002e+14
+         [27] 1   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 2   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 3   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 4   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 5   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 6   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 7   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 8   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 9   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 10   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 11   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 12   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 13   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 14   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 15   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 16   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 17   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 18   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 19   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 20   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 21   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 22   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 23   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 24   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 25   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 26   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 27   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 28   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 29   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 30   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 31   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 32   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 33   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 34   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 35   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 36   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 37   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 38   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 39   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 40   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 41   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 42   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 43   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 44   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 45   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 46   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 47   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 48   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 49   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 50   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 51   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 52   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 53   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 54   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [28] iter          Test           e/h          Cv/p          Tnew
+         [28] 0       271.841      -19068.7         724.8  -1.92064e+54
+         [28] 1  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 2  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 3  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 4  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 5  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 6  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 7  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 8  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 9  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 10  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 11  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 12  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 13  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 14  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 15  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 16  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 17  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 18  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 19  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 20  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 21  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 22  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 23  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 24  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 25  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 26  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 27  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 28  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 29  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 30  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 31  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 32  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 33  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 34  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 35  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 36  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 37  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 38  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 39  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 40  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 41  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 42  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 43  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 44  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 45  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 46  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 47  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 48  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 49  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 50  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 51  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 52  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 53  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 54  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [30] iter          Test           e/h          Cv/p          Tnew
+         [30] 0       272.774      -18392.6         724.8  -1.85243e+26
+         [30] 1  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 2  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 3  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 4  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 5  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 6  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 7  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 8  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 9  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 10  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 11  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 12  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 13  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 14  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 15  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 16  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 17  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 18  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 19  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 20  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 21  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 22  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 23  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 24  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 25  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 26  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 27  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 28  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 29  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 30  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 31  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 32  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 33  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 34  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 35  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 36  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 37  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 38  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 39  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 40  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 41  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 42  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 43  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 44  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 45  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 46  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 47  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 48  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 49  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 50  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 51  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 52  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 53  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 54  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [18] 19 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 20 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 21 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 22 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 23 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 24 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 25 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 26 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 27 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 28 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 29 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 30 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 31 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 32 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 33 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 34 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 35 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 36 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 37 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 38 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 39 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 40 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 41 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 42 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 43 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 44 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 45 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 46 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 47 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 48 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 49 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 50 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 51 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 52 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 53 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 54 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 55 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 56 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 57 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 58 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 59 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 60 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 61 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 62 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 63 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 64 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 65 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 66 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 67 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 68 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 69 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 70 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 71 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 72 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 73 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 74 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [19] 27   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 28   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 29   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 30   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 31   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 32   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 33   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 34   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 35   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 36   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 37   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 38   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 39   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 40   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 41   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 42   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 43   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 44   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 45   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 46   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 47   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 48   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 49   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 50   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 51   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 52   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 53   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 54   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 55   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 56   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 57   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 58   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 59   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 60   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 61   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 62   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 63   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 64   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 65   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 66   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 67   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 68   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 69   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 70   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 71   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 72   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 73   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 74   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 75   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 76   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 77   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 78   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 79   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 80   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 81   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 82   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [20] 23 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 24 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 25 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 26 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 27 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 28 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 29 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 30 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 31 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 32 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 33 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 34 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 35 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 36 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 37 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 38 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 39 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 40 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 41 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 42 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 43 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 44 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 45 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 46 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 47 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 48 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 49 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 50 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 51 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 52 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 53 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 54 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 55 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 56 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 57 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 58 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 59 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 60 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 61 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 62 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 63 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 64 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 65 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 66 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 67 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 68 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 69 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 70 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 71 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 72 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 73 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 74 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 75 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 76 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 77 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 78 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [21] 34  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 35  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 36  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 37  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 38  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 39  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 40  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 41  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 42  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 43  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 44  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 45  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 46  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 47  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 48  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 49  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 50  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 51  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 52  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 53  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 54  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 55  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 56  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 57  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 58  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 59  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 60  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 61  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 62  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 63  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 64  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 65  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 66  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 67  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 68  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 69  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 70  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 71  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 72  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 73  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 74  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 75  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 76  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 77  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 78  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 79  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 80  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 81  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 82  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 83  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 84  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 85  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 86  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 87  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 88  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 89  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [22] 33  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 34  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 35  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 36  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 37  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 38  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 39  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 40  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 41  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 42  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 43  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 44  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 45  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 46  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 47  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 48  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 49  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 50  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 51  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 52  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 53  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 54  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 55  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 56  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 57  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 58  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 59  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 60  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 61  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 62  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 63  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 64  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 65  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 66  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 67  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 68  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 69  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 70  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 71  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 72  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 73  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 74  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 75  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 76  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 77  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 78  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 79  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 80  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 81  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 82  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 83  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 84  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 85  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 86  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 87  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 88  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [23] 38 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 39 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 40 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 41 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 42 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 43 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 44 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 45 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 46 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 47 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 48 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 49 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 50 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 51 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 52 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 53 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 54 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 55 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 56 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 57 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 58 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 59 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 60 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 61 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 62 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 63 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 64 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 65 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 66 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 67 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 68 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 69 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 70 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 71 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 72 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 73 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 74 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 75 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 76 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 77 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 78 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 79 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 80 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 81 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 82 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 83 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 84 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 85 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 86 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 87 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 88 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 89 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 90 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 91 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 92 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 93 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [24] 48  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 49  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 50  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 51  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 52  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 53  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 54  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 55  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 56  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 57  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 58  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 59  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 60  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 61  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 62  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 63  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 64  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 65  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 66  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 67  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 68  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 69  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 70  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 71  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 72  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 73  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 74  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 75  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 76  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 77  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 78  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 79  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 80  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 81  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 82  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 83  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 84  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 85  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 86  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 87  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 88  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 89  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 90  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 91  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 92  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 93  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 94  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 95  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 96  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 97  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 98  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 99  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 100  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [24] 101  -1.62802e+27  -1.17999e+30         724.8  -1.62802e+27
+         [26] 55 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 56 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 57 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 58 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 59 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 60 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 61 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 62 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 63 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 64 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 65 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 66 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 67 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 68 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 69 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 70 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 71 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 72 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 73 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 74 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 75 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 76 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 77 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 78 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 79 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 80 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 81 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 82 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 83 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 84 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 85 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 86 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 87 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 88 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 89 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 90 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 91 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 92 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 93 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 94 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 95 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 96 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 97 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 98 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 99 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 100 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [26] 101 -2.70916e+105  -1.9636e+108         724.8 -2.70916e+105
+         [27] 55   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 56   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 57   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 58   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 59   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 60   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 61   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 62   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 63   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 64   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 65   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 66   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 67   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 68   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 69   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 70   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 71   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 72   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 73   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 74   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 75   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 76   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 77   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 78   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 79   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 80   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 81   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 82   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 83   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 84   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 85   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 86   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 87   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 88   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 89   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 90   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 91   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 92   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 93   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 94   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 95   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 96   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 97   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 98   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 99   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 100   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [27] 101   1.75002e+14   1.26842e+17         724.8   1.75002e+14
+         [28] 55  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 56  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 57  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 58  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 59  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 60  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 61  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 62  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 63  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 64  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 65  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 66  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 67  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 68  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 69  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 70  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 71  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 72  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 73  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 74  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 75  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 76  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 77  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 78  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 79  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 80  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 81  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 82  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 83  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 84  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 85  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 86  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 87  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 88  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 89  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 90  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 91  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 92  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 93  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 94  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 95  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 96  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 97  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 98  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 99  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 100  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [28] 101  -1.92064e+54  -1.39208e+57         724.8  -1.92064e+54
+         [30] 55  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 56  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 57  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 58  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 59  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 60  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 61  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 62  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 63  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 64  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 65  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 66  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 67  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 68  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 69  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 70  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 71  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 72  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 73  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 74  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 75  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 76  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 77  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 78  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 79  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 80  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 81  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 82  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 83  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 84  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 85  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 86  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 87  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 88  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 89  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 90  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 91  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 92  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 93  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 94  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 95  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 96  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 97  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 98  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 99  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 100  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [30] 101  -1.85243e+26  -1.34264e+29         724.8  -1.85243e+26
+         [18] 75 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 76 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 77 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 78 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 79 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 80 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 81 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 82 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 83 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 84 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 85 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 86 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 87 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 88 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 89 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 90 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 91 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 92 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 93 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 94 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 95 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 96 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 97 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 98 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 99 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 100 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [18] 101 -7.69694e+103 -5.57874e+106         724.8 -7.69694e+103
+         [19] 83   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 84   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 85   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 86   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 87   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 88   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 89   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 90   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 91   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 92   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 93   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 94   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 95   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 96   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 97   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 98   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 99   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 100   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [19] 101   1.16924e+49   8.47468e+51         724.8   1.16924e+49
+         [20] 79 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 80 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 81 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 82 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 83 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 84 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 85 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 86 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 87 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 88 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 89 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 90 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 91 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 92 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 93 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 94 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 95 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 96 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 97 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 98 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 99 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 100 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [20] 101 -1.06275e+153 -7.70283e+155         724.8 -1.06275e+153
+         [21] 90  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 91  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 92  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 93  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 94  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 95  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 96  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 97  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 98  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 99  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 100  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [21] 101  -6.55751e+39  -4.75288e+42         724.8  -6.55751e+39
+         [22] 89  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 90  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 91  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 92  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 93  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 94  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 95  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 96  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 97  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 98  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 99  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 100  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [22] 101  5.81776e+223  4.21672e+226         724.8  5.81776e+223
+         [23] 94 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 95 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 96 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 97 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 98 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 99 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 100 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
+         [23] 101 -5.76074e+102 -4.17539e+105         724.8 -5.76074e+102
